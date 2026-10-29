@@ -1,0 +1,48 @@
+{
+  "name": "midi-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./out/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "gen:fixtures": "tsx scripts/gen-fixtures.ts"
+  },
+  "packageManager": "pnpm@12.16.1+sha512.091d1dee7927575661b25dab3c2ae31cafc1c54d6b71ed6a6600cf0c1cb10434a447eae14015f1b23e2e6bedeed79df94a932e2164d2832280dce3fb32f656d1",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@radix-ui/react-slider": "^1.6.1",
+    "@radix-ui/react-tabs": "^1.2.1",
+    "@tonejs/midi": "^2.0.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5",
+    "electron": "^45.1.0",
+    "electron-vite": "^6.0.0",
+    "eslint": "^10.13.0",
+    "eslint-plugin-boundaries": "^7.4.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+out/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.partial.mp4
+renders/
+temp-renders/
+*.mp3
+!fixtures/
+!fixtures/**/*.mp3
+docs/
+.env.example
